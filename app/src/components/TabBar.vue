@@ -14,12 +14,13 @@ const programs = [
   <nav class="w-full h-12 fixed bottom-0 bg-[#0a246a] flex items-center px-2 shadow-inner border-t border-blue-900 z-50">
     <button
       class="flex items-center gap-2 px-7 py-1 mx-1 pr-6 
-      rounded-lg border border-[#0a5e0a] bg-gradient-to-b from-[#3cb043] to-[#1e5d1e] text-white font-semibold shadow-inner 
+      rounded-r-xl border border-[#0a5e0a] bg-gradient-to-b from-[#3cb043] to-[#1e5d1e] text-white font-semibold shadow-inner 
       hover:brightness-110 active:translate-y-px active:brightness-90 transition absolute -left-2 bottom-0"
     >
       <img :src="startIcon" alt="start" class="w-10 h-10" />
       <span class="drop-shadow-sm">пупс</span>
     </button>
+
     <div class="flex items-center pl-36 h-full">
         <div 
         v-for="(item, index) in programs"
