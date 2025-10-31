@@ -7,6 +7,7 @@ import TabBar from "../components/TabBar.vue";
 import ErrorWindow from "../components/ErrorWindow.vue";
 import SolfegeQuiz from "./SolfegeQuiz.vue";
 import PhonoFanat from "./PhonoFanat.vue";
+import Titry from "./Titry.vue";
 
 const showWelcomeWindow = ref(true);
 
@@ -39,8 +40,13 @@ const games = [
   },
   {
     icon: new URL("../assets/icons/piano_4560961.png", import.meta.url).href,
-    name: "ФоноФанат2000",
+    name: "ФоноФанат2K",
     component: PhonoFanat, //
+  },
+  {
+    icon: new URL("../assets/icons/text_edit_14943.png", import.meta.url).href,
+    name: "Титры",
+    component: Titry,
   },
 ];
 
@@ -90,9 +96,10 @@ onMounted(() => {
       @dblclick="() => handleProgramLaunch(game.component, game.name)"
     >
       <img :src="game.icon" alt="game icon" class="w-12 h-12 mb-1" />
-      <span class="text-white text-sm font-semibold drop-shadow">{{
-        game.name
-      }}</span>
+      <span
+        class="text-white text-sm font-semibold drop-shadow text-center w-24"
+        >{{ game.name }}</span
+      >
     </div>
 
     <div

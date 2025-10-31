@@ -280,7 +280,7 @@ onUnmounted(() => {
           <button
             v-if="answered"
             @click="next"
-            class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+            class="mt-4 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition duration-200 cursor-pointer"
           >
             Следующий
           </button>
