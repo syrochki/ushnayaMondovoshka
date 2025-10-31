@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MainDesktop from './views/MainDesktop.vue';
+import MainDesktop from "./views/MainDesktop.vue";
 </script>
 
 <template>
